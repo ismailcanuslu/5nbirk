@@ -1,0 +1,13 @@
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-content {
+    margin-left: 1.5rem;
+}

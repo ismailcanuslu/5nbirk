@@ -1,0 +1,22 @@
+/* Soldaki component r,g,b(229,229,229) olarak ayarlanıyor */
+.bsb-tpl-bg-platinum {
+    background-color: rgb(229, 229, 229);
+}
+
+/* Sağdaki component r,g,b(250,250,250) olarak ayarlanıyor */
+.bsb-tpl-bg-lotion {
+    background-color: rgb(250, 250, 250);
+}
+
+/* Giriş yap butonu ve 'Forgot password' alanı arasındaki çizgi */
+.border-separator {
+    border-top: 1px solid #ccc;
+    /* Hafif gri bir çizgi */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login-body {
+    position: absolute;
+
+}

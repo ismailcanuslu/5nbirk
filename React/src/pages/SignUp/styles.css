@@ -1,0 +1,39 @@
+/* İsim ve soyisim alanlarındaki inputları daha küçük hale getirmek için */
+#name,
+#lastname {
+    width: 95%;
+    /* Genişliği %90 yaparak alanı küçült */
+    margin: 0 auto;
+    /* Ortalamak için margin ayarlaması yap */
+}
+
+label[for="name"],
+label[for="lastname"] {
+    margin-left: 8px;
+    /* Sol taraftan boşluk bırak */
+}
+
+/* Küçük ekran için isim inputunu 3px sola kaydır */
+@media (max-width: 768px) {
+    #name {
+        transform: translateX(4px);
+        /* Inputu 3px sola kaydır */
+    }
+
+    #lastname {
+        transform: translateX(4px);
+        /* Inputu 3px sola kaydır */
+    }
+}
+
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 1.5rem;
+        /* H2 boyutunu küçük ekranlar için küçült */
+    }
+
+    .lead {
+        font-size: 0.9rem;
+        /* P etiketinin boyutunu küçük ekranlar için küçült */
+    }
+}

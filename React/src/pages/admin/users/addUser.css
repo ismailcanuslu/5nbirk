@@ -1,0 +1,18 @@
+/* İsim ve soyisim alanlarındaki inputları daha küçük hale getirmek için */
+#name,
+/* Değişiklik: firstName */
+#lastname {
+    /* Değişiklik: lastName */
+    width: 95%;
+    /* Genişliği %90 yaparak alanı küçült */
+    margin: 0 auto;
+    /* Ortalamak için margin ayarlaması yap */
+}
+
+label[for="name"],
+/* Değişiklik: firstName */
+label[for="lastname"] {
+    /* Değişiklik: lastName */
+    margin-left: 8px;
+    /* Sol taraftan 10px boşluk bırak */
+}

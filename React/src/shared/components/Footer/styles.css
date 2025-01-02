@@ -1,0 +1,130 @@
+/* Genel Stil Ayarları */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Sayfa İçeriği ve Footer Ayarlama */
+#root {
+    flex: 1;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Footer Stilleri */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Footer'daki içerik alanları (İletişim, Linkler, Bülten) */
+.footer-contact,
+.footer-links,
+.footer-newsletter {
+    flex: 1;
+    margin: 10px 20px;
+}
+
+/* Başlıklar */
+.footer-contact h3,
+.footer-links h3,
+.footer-newsletter h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* İletişim alanı */
+.footer-contact p,
+.footer-contact address {
+    margin: 5px 0;
+    color: black;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Linkler alanı */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* Sıralama için dikey olarak hizalanacak */
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+    /* Her bağlantı arasında boşluk */
+}
+
+/* Bülten (Newsletter) formu */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.newsletter-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Alt Alan */
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .footer .widget-title {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-newsletter {
+        text-align: center;
+    }
+}

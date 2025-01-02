@@ -1,0 +1,44 @@
+/* Language Selector Styles */
+.dropdown-container {
+    position: fixed;
+    /* Bileşeni sabit hale getir */
+    bottom: 20px;
+    /* Alt kısımdan 20px yukarıda */
+    right: 20px;
+    /* Sağ kısımdan 20px içeride */
+    z-index: 1000;
+    /* Diğer bileşenlerin üstünde görünmesi için z-index ayarla */
+    background-color: #f8f9fa;
+    /* Arka plan rengi */
+    padding: 10px;
+    /* İçerik için boşluk */
+    border-radius: 5px;
+    /* Kenarları yuvarla */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Gölge efekti */
+}
+
+/* Dropdown Button Styles */
+.dropdown-container .dropdown-toggle {
+    background-color: #007bff;
+    /* Düğmenin arka plan rengi */
+    color: white;
+    /* Yazı rengi */
+    border: none;
+    /* Kenarlık yok */
+}
+
+.dropdown-container .dropdown-toggle:hover {
+    background-color: #0056b3;
+    /* Hover durumu için renk değişimi */
+}
+
+.dropdown-item {
+    color: black;
+    /* Dropdown içindeki yazı rengi */
+}
+
+.dropdown-item:hover {
+    background-color: #e2e6ea;
+    /* Hover durumunda arka plan rengi */
+}

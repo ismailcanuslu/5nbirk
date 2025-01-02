@@ -1,0 +1,21 @@
+.custom-alert {
+    margin-top: 10px;
+    /* Bu boşluk, buton ile uyarı arasındaki mesafeyi ayarlar */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d6d8db;
+    background-color: #e2e3e5;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* İkon ile metin arasındaki boşluğu ayarlar */
+}
+
+.alert-icon {
+    width: 24px;
+    /* İkon boyutunu ayarlamak için */
+    height: 24px;
+    /* İkon boyutunu ayarlamak için */
+    margin-right: 0;
+    /* İkon ve metin arasındaki ek boşluğu kaldırır */
+}

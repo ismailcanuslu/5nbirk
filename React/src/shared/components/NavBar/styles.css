@@ -1,0 +1,308 @@
+/* Navbar'ın üst boşluğunu sıfırla */
+.navbar {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the additional links */
+.mx-auto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Align the links horizontally */
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+/* Navbar Brand logo boyutu ve konumu */
+.navbar-brand img {
+    width: 135px;
+    height: 45px;
+}
+
+/* Font ve yazı rengi ayarları */
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: black;
+}
+
+.navbar .nav-link {
+    font-family: 'DM Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+}
+
+/* Active tab underline */
+.active-indicator {
+    width: 100%;
+    height: 2px;
+    /* Thickness of the line */
+    background-color: black;
+    /* Color of the line */
+    margin-top: 5px;
+    /* Space between link and line */
+}
+
+/* Headings font ayarları */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+/* Sign In ve Sign Up butonları için stil ayarları */
+.navbar-actions .btn {
+    border: none;
+    /* Kenarlık kaldır */
+    font-weight: bold;
+    /* Yazı tipini kalın yap */
+    padding: 8px 12px;
+    /* Dikey ve yatay padding */
+}
+
+/* Login butonu için stil */
+.navbar-actions .btn-outline-primary {
+    background-color: transparent;
+    /* Arka plan şeffaf */
+    color: black;
+    /* Yazı rengi siyah */
+    margin-right: 8px;
+    /* Butonlar arası boşluk */
+}
+
+.navbar-actions .btn-outline-primary:hover {
+    background-color: black;
+    /* Hover durumunda arka plan siyah */
+    color: white;
+    /* Hover durumunda yazı beyaz */
+}
+
+/* Sign Up butonu için stil */
+.navbar-actions .btn-primary {
+    background-color: black;
+    /* Arka plan siyah */
+    color: white;
+    /* Yazı rengi beyaz */
+}
+
+.navbar-actions .btn-primary:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Hover durumunda %10 solma */
+}
+
+/* Notification buttons */
+.notification-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    /* Adjust space between buttons and dropdown */
+}
+
+/* Notification button styles */
+.notification-buttons .btn {
+    background: none;
+    /* Remove button background */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Pointer cursor */
+    margin-left: 5px;
+    /* Space between notification buttons */
+    color: black;
+    /* İkon rengi burada belirleniyor */
+}
+
+/* Optional: Add hover effects for notification buttons */
+.notification-buttons .btn:hover {
+    color: gray;
+    /* Hover durumunda farklı bir renk */
+    opacity: 0.7;
+    /* Slightly fade on hover */
+}
+
+/* Ensure dropdown does not increase navbar height */
+.dropdown-toggle {
+    padding-right: 10px;
+    /* Adjust padding to make room for buttons */
+
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    min-width: 150px;
+    /* Minimum genişlik */
+    padding: 8px 10px;
+    /* Üst-alt ve sağ-sol padding */
+    font-size: 0.875rem;
+    /* Yazı boyutunu küçült */
+    border-radius: 5px;
+    /* Köşeleri yuvarla */
+
+}
+
+/* Dropdown öğelerinin yüksekliğini ve paddingle daha kompakt hale getirme */
+.dropdown-menu .dropdown-item {
+    padding: 6px 12px;
+    /* Öğelerin iç boşluklarını küçült */
+    line-height: 1.2;
+    /* Satır yüksekliğini düşür */
+}
+
+/* Dropdown içeriği arasındaki mesafeyi daralt */
+.dropdown-menu .dropdown-divider {
+    margin: 5px 0;
+    /* Çizgi öncesi ve sonrası boşluğu daralt */
+}
+
+/* Dropdown'un genişlik ve konum stil ayarları */
+.dropdown {
+    width: fit-content;
+    /* İçeriğe göre genişliği ayarla */
+}
+
+/* Dropdown başlıklarının ve metinlerinin stilleri */
+.dropdown-item {
+    font-size: 0.85rem;
+    /* Daha küçük yazı boyutu */
+    white-space: nowrap;
+    /* Uzun metinler taşmasın */
+}
+
+/* Tıklama izinin rengi için */
+.navbar-actions .btn:focus {
+    outline: none;
+    /* Varsayılan odak çerçevesini kaldır */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    /* Siyah odak izini ekle */
+}
+
+/* Dropdown konumunu daha iyi ayarlamak için */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+    /* Dropdown'un üst boşluğunu ayarla */
+}
+
+/*dropdowndaki buttondaki ok sembolünü siler*/
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Navbar menü öğeleri arasına dikey çizgi eklemek için */
+.navbar-nav .nav-item:not(:last-child)::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Hafif siyah, %20 opak */
+    margin-left: 15px;
+    /* Çizgiyi menü öğesinden biraz uzaklaştır */
+    margin-right: 15px;
+    /* Çizgiden sonraki boşluk */
+}
+
+/* Sohbet baloncuğu ve çan simgeleri arasındaki boşluğu artırmak için */
+.notification-buttons .btn {
+    margin-left: 10px;
+    /* Simgeler arasındaki boşluğu artır */
+    margin-right: 10px;
+}
+
+/* Küçük ekranlarda dropdown menü açılırken sola doğru açılsın */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: left !important;
+    }
+
+    .navbar-nav {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 !important;
+        text-align: left !important;
+    }
+
+    .navbar-actions {
+        display: flex;
+        justify-content: flex-center;
+        width: 100%;
+    }
+
+    /* Notification ve Messages dropdownlarını sağa hizala */
+    .navbar-actions .notification-dropdown,
+    .navbar-actions .messages-dropdown {
+        margin-left: 0;
+        /* Sağdaki boşluğu kaldır */
+        left: 0px;
+        /* Dropdown'u sola hizala */
+    }
+
+    .dropdown-menu {
+        left: 0 !important;
+        /* Dropdown menüsünü sola hizala */
+        right: auto;
+        /* Sağdaki konumu kaldır */
+    }
+}
+
+.navbar-toggler-icon {
+    display: none !important;
+    /* Varsayılan simgeyi gizle */
+}
+
+
+.navbar-toggler {
+    background: none;
+    /* Varsayılan arka planı kaldır */
+    border: none !important;
+    /* Kenarlığı kaldır */
+    width: 40px;
+    /* Genişlik */
+    height: 35px;
+    /* Yükseklik */
+    cursor: pointer;
+    /* İmleci göster */
+}
+
+/* Özel simgeyi eklemek için */
+.navbar-toggler {
+    background-image: url('../../../assets/navbar-hamburger.png');
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+    border: none;
+
+}
